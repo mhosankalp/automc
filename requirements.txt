@@ -1,4 +1,4 @@
-tensorflow == 1.11.0
+tensorflow == 1.12.1
 Flask
 WTForms
 SQLAlchemy
