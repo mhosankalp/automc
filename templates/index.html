@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+<body>
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-primary">
+          <p class="title">Get answer for questions related to your health</p>
+          <form action="getanswer" method="POST">
+            <div class='wrapper'>
+              <div class='analyze'>
+                <input type ="submit" id='getanswer-button' class='relogin-button' value='Get Your Answers'>
+              </div>
+            </div>
+          </form>
+        </article>
+        <article class="tile is-child notification is-warning">
+          <p class="title">Get your X-rays verified/reverified</p>
+          <form action="getxray" method="POST">
+            <div class='wrapper'>
+              <div class='analyze'>
+                <input type ="submit" id='getxray-button' class='relogin-button' value='Coming Soon..'>
+              </div>
+            </div>
+          </form>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Automated Medical Consulting</p>
+          <p class="subtitle">Click on the tiles to get answers on your health</p>
+          <figure class="image is-4by3">
+            <img src="https://github.com/mhosankalp/ImageClassifierWebCamera/raw/master/image/image-asset.jpeg">
+          </figure>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <p class="title">Get your blood work verified/reverified</p>
+        <form action="getblood" method="POST">
+            <div class='wrapper'>
+              <div class='analyze'>
+                <input type ="submit" id='getblood-button' class='relogin-button' value='Coming Soon..'>
+              </div>
+            </div>
+          </form>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success">
+      <div class="content">
+        <p class="title">Chatbot!!</p>
+        <form action="chatbot" method="POST">
+            <div class='wrapper'>
+              <div class='analyze'>
+                <input type ="submit" id='chatbot-button' class='relogin-button' value='Coming Soon..'>
+              </div>
+            </div>
+          </form>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+<section class="hero">
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Automated Medical Consulting</strong> by Sankalp Sachan
+          <span class="icon is-small">
+            <i class="fa fa-copyright"></i>
+          </span>2019</a>
+        </p>
+        <p>
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-globe"></i>
+          </a>          
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="icon has-text-primary" href="mailto:mho.sankalp@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}

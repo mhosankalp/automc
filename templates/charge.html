@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block body %}
+<body>
+<section class="hero is-white">
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <!--img src="https://github.com/mhosankalp/ImageClassifierWebCamera/tree/master/image/health-care.jpg" alt="health-care"-->
+        <img src="https://github.com/mhosankalp/ImageClassifierWebCamera/raw/master/image/health-care.jpg" alt="Flaskex_logo">
+        <h6 href="/" class="subtitle"><strong>Automated Medical Consulting</strong></h6>
+      </a>
+    </div>
+  </nav>
+</section>
+<section class="hero is-primary is-bold is-large">
+    <div class="columns">
+      <div class="column is-auto">
+        <form action="charge" method="POST">
+          <div class = xyz>
+            <label for="cc">Card Number</label>
+            <br>
+            <input type="text" class="form-control" id="cc" placeholder="Card number" data-stripe="number">
+          </div>
+          <div class = xyz>
+            <label for="cvc">CVC</label>
+            <input type="text" class="form-control" id="cvc" placeholder="CVC" data-stripe="cvc">
+          </div>
+          <div class = xyz>
+          <td>
+            <label for="exp-month">Expiration (MM/YYYY)</label>
+            <div class="row">
+                  <tr><input type="text" class="form-control" placeholder="Month" data-stripe="exp-month"></tr>
+                  <tr><input type="text" class="form-control" placeholder="Year" data-stripe="exp-year"></tr>
+            </div>
+          </td>
+        </div>
+        <div class = xyz>
+            <label for="coupon">Coupon</label>
+            <input type="text" class="form-control" id="coupon" name = "coupon" placeholder="Have a Promo code?">
+        </div>
+        <div class = xyz>
+          <br>
+            <input type="submit" id="charge-button">
+        </div>
+        </form>
+      </div>
+  </div>
+</section>
+<section class="hero">
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Automated Medical Consulting</strong> by Sankalp Sachan
+          <span class="icon is-small">
+            <i class="fa fa-copyright"></i>
+          </span>2019</a>
+        </p>
+        <p>
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-globe"></i>
+          </a>          
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="icon has-text-primary" href="mailto:mho.sankalp@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}

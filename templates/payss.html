@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block body %}
+<section class="hero is-white">
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <!--img src="https://github.com/mhosankalp/ImageClassifierWebCamera/tree/master/image/health-care.jpg" alt="health-care"-->
+        <img src="https://github.com/mhosankalp/ImageClassifierWebCamera/raw/master/image/health-care.jpg" alt="Flaskex_logo">
+        <h6 href="/" class="subtitle"><strong>Automated Medical Consulting</strong></h6>
+      </a>
+    </div>
+  </nav>
+</section>
+<section class="hero is-primary is-bold is-large">
+<div class="row">
+    <div class="col-xs-12">
+      <form action="relogin" method="POST">
+      <div class='wrapper'>
+        <br>
+        <br>
+        <h4><label for="relogin">Payment success. Please login now..</label></h4>
+        <div class='analyze'>
+          <input type ="submit" id='relogin-button' class='relogin-button' value='Login'>
+          <br>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</section>
+<section class="hero">
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Automated Medical Consulting</strong> by Sankalp Sachan
+          <span class="icon is-small">
+            <i class="fa fa-copyright"></i>
+          </span>2019</a>
+        </p>
+        <p>
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-globe"></i>
+          </a>          
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="icon has-text-primary" href="mailto:mho.sankalp@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</section>
+{% endblock %}

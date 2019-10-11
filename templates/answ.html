@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+<body>
+<section class="hero is-primary is-bold is-large">
+	<div>
+  		<div class='center'>
+    		<div class='title'>Get your Medical questions answered here.</div>
+    			<p>
+      				Get all yours medical questions answered here anonymously. The questions answered here are automatic based on an AI model. None of your questions or answers are stored here. The questions answered here are only for your reference purpose. Consulting doctor based on the response should always be done before acting on the response. Thanks!
+    			</p>
+    			<div class='content'>
+					<h4><label for="Your Question">Your Question</label></h4>
+					<textarea id="yourquestion" name = "yourquestion" rows="25" cols="100" >{{question}}</textarea>
+					<h4><label for="Our Answer">Our Answer</label></h4>
+					<textarea id="ouranswer" name = "ouranswer" rows="25" cols="100" >{{answer}}</textarea>
+				</div>
+			</div>
+		</div>
+</section>
+<section class="hero">
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Automated Medical Consulting</strong> by Sankalp Sachan
+          <span class="icon is-small">
+            <i class="fa fa-copyright"></i>
+          </span>2019</a>
+        </p>
+        <p>
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-globe"></i>
+          </a>          
+          <a class="icon has-text-primary" href="https://github.com/mhosankalp" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="icon has-text-primary" href="mailto:mho.sankalp@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}
