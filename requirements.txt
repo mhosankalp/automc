@@ -8,7 +8,7 @@ flask-heroku
 gunicorn
 gevent
 
-# To evaluate RE answers :
+# To evaluate answers :
 sklearn
 pandas==0.23
 
