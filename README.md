@@ -11,3 +11,7 @@ BIOBERT_DIR. Make sure to name it as biobert_model.ckpt for all three files. You
 7. python app.py
 8. Navigate to 127.0.0.1:5000 in your browser (safari/chrome)
 
+## Screenshots for the webapp
+
+1) Login screen 
+
