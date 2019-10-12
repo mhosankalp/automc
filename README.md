@@ -13,5 +13,22 @@ BIOBERT_DIR. Make sure to name it as biobert_model.ckpt for all three files. You
 
 ## Screenshots for the webapp
 
-1) Login screen 
+1. Login screen:
 
+![GitHub Logo](/media/Image1.png)
+
+2. Payment Screen:
+
+![GitHub Logo](/media/Image2.png)
+
+3. Home Page:
+
+![GitHub Logo](/media/Image3.png)
+
+4. First application of answering questions using biobert. Rest of the application are under development. 
+
+![GitHub Logo](/media/Image4.png)
+
+5. Current answer as recieved now
+
+![GitHub Logo](/media/Image5.png)
